@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>CJS - Colomiers Jumelage et Soutien - Contact</title>
+    <meta charset="utf-8">
+    <script src="../cjsProject/cjsLandingPage.js" defer></script>
+  </head>
+  <body>
+    <header id="mainHeader">
+      <h1>Colomiers Jumelage et Soutien</h1>
+      <nav id="mainNav">
+        <ul>
+          <li><a href=..\index.html>Accueil</a></li>
+          <li><a href=..\projets\cjsProjets.html>Projets</a></li>
+          <li><a href=..\brocantes\cjsBrocantes.html>Brocantes</a></li>
+          <li><a href=..\galerie\cjsGalerie.html>Galerie</a></li>
+          <li><a href=..\contact\cjsContact.html>Contact</a></li>
+        </ul>
+      </nav><!--mainNav terminé-->
+      <br>
+      <img src="../img/LandingPage1.jpg" alt="Image d'Accueil">
+    </header><!--mainHeader terminé-->
+    <main id="mainContent">
+      <h2> Contactez-nous</h2>
+      <p>De nombreux bénévoles viennent prêter main-forte pour l’organisation des brocantes annuelles. Si vous avez un peu de temps libre vous pouvez nous rejoindre : l’association recherche des personnes pour aider au transfert des marchandises du local de stockage vers le Hall Comminges pour faire l'installation et ranger les invendus à la fin de la brocante.<br>L’ensemble des adhérents et adhérentes au C.J.S. remercie par avance toutes les personnes qui viendront aider, acheter, sans oublier toutes celles qui ont donné.<br>Si vous souhaitez devenir bénévole, merci de remplir le formulaire ci-dessous. Tous les champs de ce formulaire sont requis.</p>
+      <form id="formContact" action="merci.html">
+        <div>
+          <label for="firstName">Prénom*</label>
+          <input type="text" name="firstName" id="firstName" required autofocus>
+        </div><br>
+        <div>
+          <label for="lastName">Nom*</label>
+          <input type="text" name="lastName" id="lastName" required>
+        </div><br>
+        <div>
+          <label for="emailAddress">Adresse mail*</label>
+          <input type="email" name="emailAddress" id="emailAddress" required>
+        </div><br>
+        <div>
+          <label for="phoneNumber">Numéro de téléphone*</label>
+          <input type="number" name="phoneNumber" id="phoneNumber" required>
+        </div><br>
+        <div>
+          <label for="city">Ville*</label>
+          <input type="text" name="city" id="city" required>
+        </div><br>
+        <div>
+          <label for="commentSection">Votre Message*</label>
+          <textarea name="commentSection" id="commentSection" required></textarea>
+        </div><br>
+        <input type="checkbox" id="rgpd" required>En soumettant ce formulaire, je consens à ce que ces données soient utilisées afin d'être recontacté.e dans le cadre de l'association CJS.<br><br>
+        <button type="submit">Envoyer</button>
+      </form>
+    </main><br>
+    <footer id="mainFooter">
+      <a href="https://instagram.com/colomiers_jumelage_et_soutien/" target="_blank"><img src="../img/instagramLogo.png" alt="Instagram Logo" width="50"></a>
+      <a href="https://fr-fr.facebook.com/colomiersjumelageetsoutien/" target="_blank"><img src="../img/facebookLogo.png" alt="Facebook Logo" width="50"></a>
+      <p>&copy; Colomiers Jumelage et soutien</p>
+      <p><a href=#mainHeader>Revenir en haut de la page</a></p>
+    </footer><!--mainFooter terminé-->
+  </body>
+</html>
