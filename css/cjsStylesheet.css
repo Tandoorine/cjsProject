@@ -12,6 +12,9 @@
 
 #reseauxSociaux{
     text-align: right;
+    font-family: Century Gothic;
+    font-size: 1.2em;
+    color: var(--dark-red);
 }
 
 #mainHeader{
@@ -34,7 +37,7 @@ header > img{
 /*police et centrage du menu */
 #mainMenu a{
     color:var(--white);
-    font-size: 1.8em;
+    font-size: 1.2em;
     font-family: Century Gothic;
     text-align: center;
     letter-spacing: 0.5mm;
