@@ -1,6 +1,22 @@
-/* couleur de fond du mainHeader */
+:root{
+    --white-fond: #ffffff5a;
+    --white:#ffffff; 
+    --dark-red:#800000;
+    --red: #ff0005cc;
+    --black: #000000; 
+}
+
+*{
+    box-sizing: border-box;
+}
+
 #mainHeader{
-    background-color: red;
+    height: 100px;
+}
+
+/* couleur de fond du mainHeader */
+#mainHeader, #mainTitle > h2{
+    background-color: var(--red);
     background-position: 100% 100%;
     background-repeat: no-repeat;
     -webkit-font-smoothing: auto;
@@ -13,23 +29,26 @@ header > img{
 
 /*police et centrage du menu */
 #mainMenu a{
-    color:white;
-    font-size: 18pt;
+    color:var(--white);
+    font-size: 1.8em;
     font-family: Century Gothic;
     text-align: center;
     letter-spacing: 0.5mm;
     display: flex;
     text-decoration: none;
+    margin: collapse;
 }
 
-/* couleur de survol du menu en noir */
+/* couleur de survol du menu en dark brown */
 #mainMenu a:hover{
-    color:black;
-    font-size: 18pt;
+    color: var(--dark-red);
+    font-size: 1.8em;
     font-family: Century Gothic;
+    font-weight: bold;
     text-align: center;
     display: flex;
     text-decoration: none;
+    padding-inline: 15px;
 }
 
 
@@ -41,34 +60,46 @@ header > img{
     padding: 1%;
 }
 
-aside{
-margin: 0%;
-border: 0cm;
-padding: 0%;
+/*images du site responsive*/
+img{
+    max-width: 100%;
+    height: auto;
 }
+
+#galerieDeroulante{
+    background-color: var(--red);
+    text-align: center;
+    margin: auto;
+}
+
 
 /* background du contenu principal en img */ 
 #contenuPrincipal{
-    height: 100%; width: 100%;
     background-image:url("../img/mainContent1.jpg");
     background-size: cover;
+    background-attachment: fixed;
     z-index: -1; /* garde le fond derrière le contenu */
     align-self: flex-start;
     background-repeat: no-repeat;
 }
 
+#mainContent {
+    background-color: var(--white-fond);
+    display: ;
+}
+
 
 h1{
-    color:black;
+    color:var(--black);
     text-align:left;
-    font-size: 35pt;
+    font-size: 3em;
     font-family: Century Gothic;
     font-variant: small-caps;
 }
 
 
 h2{
-    color:black;
+    color:var(--black);
     text-align:center;
     font-size: 24pt;
     font-family: Century Gothic;
@@ -76,40 +107,48 @@ h2{
     letter-spacing: 0.5mm;
 }
 
-#mainContent p, #articlesPresse li{
-    color:whitesmoke;
+#mainContent p{
+    color:var(--white);
+    font-size: large;
+    text-align:center;
+    object-position: center;
+    letter-spacing: 0.5mm;
+    line-height: 2cm;
+    font-size: 1.6em;
+    font-family: Century Gothic;
+    margin: 0px 20px;
+}
+
+#articlesPresse a{
+    color:var(--white);
     font-size: large;    
     text-align:center;
     object-position: center;
     letter-spacing: 0.5mm;
     line-height: 2cm;
-    font-size: 16pt;
+    font-size: 1em;
     font-family: Century Gothic;
 }
 
-#articlesPresse li:hover{
-    color:black;
+#articlesPresse a:hover{
+    color:var(--dark-red);
     font-size: large;    
     text-align:center;
     object-position: center;
     letter-spacing: 0.5mm;
     line-height: 2cm;
-    font-size: 16pt;
+    font-size: 1em;
     font-family: Century Gothic;
 }
 
 #mainFooter p{
-    color:black;
+    color:var(--black);
     display: block;
     -webkit-font-smoothing: auto;
     text-align:center;
-    font-size: 10pt;
+    font-size: 0.8em;
     font-family: Century Gothic;
-    background-color: red;
-}
-
-#instagram, #facebook{
-    left: 100%;
+    background-color: var(--red);
 }
 
 #laDepeche{
