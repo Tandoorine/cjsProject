@@ -10,6 +10,13 @@
     box-sizing: border-box;
 }
 
+#reseauxSociaux{
+    text-align: right;
+    font-family: Century Gothic;
+    font-size: 1.2em;
+    color: var(--dark-red);
+}
+
 #mainHeader{
     height: 100px;
 }
@@ -42,7 +49,7 @@ header > img{
 /* couleur de survol du menu en dark brown */
 #mainMenu a:hover{
     color: var(--dark-red);
-    font-size: 1.8em;
+    font-size: 1.2em;
     font-family: Century Gothic;
     font-weight: bold;
     text-align: center;
