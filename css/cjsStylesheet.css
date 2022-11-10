@@ -153,11 +153,6 @@ h2{
     background-color: var(--red);
 }
 
-#mainFooter{
-    position: fixed;
-    bottom: 0;
-}
-
 #laDepeche{
     text-align: center;
 }
