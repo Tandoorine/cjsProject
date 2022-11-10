@@ -12,6 +12,8 @@
 
 #mainHeader{
     height: 100px;
+    position: fixed;
+    top: 0;
 }
 
 /* couleur de fond du mainHeader */
@@ -149,6 +151,11 @@ h2{
     font-size: 0.8em;
     font-family: Century Gothic;
     background-color: var(--red);
+}
+
+#mainFooter{
+    position: fixed;
+    bottom: 0;
 }
 
 #laDepeche{
